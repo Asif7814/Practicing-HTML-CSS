@@ -1,0 +1,252 @@
+<!--This is a program used to test various HTML & CSS Concepts-->
+
+<!DOCTYPE HTML> 
+<html>
+    <head>
+        <!--Icon for Tab-->
+        <!--rel = relationship status-->
+        <link rel="icon" type="image/png" href="Images/ATSV_Favicon.png">
+        
+        <title>Hello World</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Sample HTML Practice</h1>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Products</a>
+            <a href="">Contact Us</a>
+        </header><hr>
+
+        <main>
+            <img src="Images/Metro Boomin.jpg" alt="Metro Boomin Pic" height="100", width="100">
+            <h4>Header 4</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias dolor, corrupti molestias laborum autem nostrum ipsa laudantium fugit eligendi magnam ullam cumque quidem nulla ducimus ab, illum eum odit.</p>
+
+            <h1>This is an h1 heading</h1>
+            <h2>This is an h2 heading</h2>
+            <h3>This is an h3 heading</h3>
+            <h4>This is an h4 heading</h4>
+            <h5>This is an h5 heading</h5>
+            
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, ipsum rerum mollitia alias sit, non odit, iste id perspiciatis similique officiis dolorum culpa delectus libero atque. Vero veritatis aliquam quae!
+            </p>
+
+            <br> <!--A break between elements-->
+
+            <!--Similar to a paragraph but pre-formatted within the code-->
+            <pre>
+                Lorem ipsum dolor sit, amet 
+                consectetur adipisicing elit.
+                
+                Vitae, ipsum rerum mollitia alias
+                sit, non odit, iste id perspiciatis 
+                
+                similique officiis dolorum culpa 
+                delectus libero atque. Vero veritatis 
+                aliquam quae!
+            </pre>
+
+            <hr>
+            <br>
+
+            <p>This is normal text</p>
+            <p>This is <b>bold</b> text</p>
+            <p>This is <i>italic</i> text</p>
+            <p>This is <u>underlined</u> text</p>
+            <p>This is <del>deleted</del> text</p>
+            <p>This is <big>big</big> text</p>
+            <p>This is <small>small</small> text</p>
+            <p>This is <sub>subscript</sub>text</p>
+            <p>This is <sup>superscript</sup> text</p>
+            <p>This is <tt>monospaced</tt> text</p>
+            <p>This is <mark>marked</mark> text</p>
+
+            <hr>
+            <br>
+
+            <!--Styling Text-->
+            <!-- - whatever is enclosed in span tags is an inline container; only affects the text/area-->
+            <h2><span style="background-color: aquamarine;">This is a span title</span></h2>
+
+            <!--Whatever is enclosed in div tags is a block container; affects the entire width of the webpage-->
+            <h2><div style="background-color: tomato">This is a div title</div></h2>
+
+            <hr>
+            <br>
+            
+            <!--Unordered Lists-->
+            <h4>Groceries</h4>
+            <ul>
+                <li>Milk</li>
+                <li>Bread</li>
+                <li>Cheese</li>
+                <li>Coffee Supplies:</li>
+                <ul>
+                    <li>Coffee Beans</li>
+                    <li>Creamer</li>
+                    <li>Sugar</li>
+                </ul>
+            </ul>
+
+            <!--Ordered Lists-->
+            <h4>Meal Order</h4>
+            <ol>
+                <li>Eat Breakfast</li>
+                <li>Eat Lunch</li>
+                <li>Eat Dinner</li>
+            </ol>
+
+            <!--Description Lists-->
+            <h4>Random Shortcuts for Phrases</h4>
+            <dl>
+                <dt>Word</dt>
+                <dd>Definition</dd>
+                <dt>brb</dt>
+                <dd>Be Right Back</dd>
+                <dt>lmk</dt>
+                <dd>Let Me Know</dd>
+            </dl>
+
+            <hr>
+            <br>
+
+            <!--Tables-->
+            <table border="1">
+                <tr align="center"> <!--Table Row-->
+                    <th width="100">Sunday</th> <!--Table Heading-->
+                    <th width="100">Monday</th>
+                    <th width="100">Tuesday</th>
+                    <th width="100">Wednesday</th>
+                    <th width="100">Thursday</th>
+                    <th width="100">Friday</th>
+                    <th width="100">Saturday</th>
+                </tr>
+                <tr align="center">
+                    <td>Closed</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>10-2</td>
+                </tr>
+            </table>
+
+            <hr>
+            <br>
+
+            <!--HyperLink-->
+            <!-- - href is the link-->
+            <!-- - target set to blank opens link in new tab-->
+            <!-- - title; when hovered over, description of event can be shown-->
+            <a href="https://chat.openai.com/?model=text-davinci-002-render-sha", 
+            target="_blank",
+            title="Opens ChatGPT">
+                ChatGPT Link
+            </a>
+
+            <br>
+            <!-- - connected to local file within the same folder-->
+            <a href="lyrics.html", target="blank", title="Opens to Contents of Lyrics.html">
+                Open Lyrics Page
+            </a>
+
+            <hr>
+            <br>
+            <!--Images-->
+            <!-- - src is the image source, put into its own separate folder-->
+            <!-- - alt shows the alternative text in case the image doesn't display,
+            can also use extension to read out the information on a web page-->
+            <!-- - can adjust height and width of image; may change image quality if too drastic of a change-->
+            
+            <!-- - Can also add hyperlink-->
+            <a href="https://en.wikipedia.org/wiki/Metro_Boomin",
+            target="_blank", 
+            title="Opens to Metro Boomin Wiki Page">
+                    
+            <img src="Images/Metro Boomin.jpg",
+                alt="This is a picture of Metro Boomin"
+                height="200", width="200">
+            </a>
+
+            <!--Can Also Add: Audio (.mp3, .wav), Video (.mp4) (Include backups in case web browser doesn't support one type)-->
+
+            <hr>
+            <br>
+
+            <!--Button-->
+            <a href="lyrics.html">
+                <button>Click Me</button>
+            </a>
+
+            <hr>
+            <br>
+
+            <form action="index.php" method="POST" enctype="multipart/form-data">
+                <label for="username">Username:</label>
+                <input type="text" id="username" minlength="6" maxlength="15" required>
+
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" minlength="6" maxlength="15" required>
+                
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="email@gmail.com">
+
+                <br>
+                <label for="phone">Phone #:</label>
+                <input type="tel" id="phone" placeholder="123-456-7890", pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+                <br>
+                <label for="bday">Birthdate:</label>
+                <input type="date" id="bday">
+
+                <br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="0" max="99" value="1">
+
+                <br>
+                <label for="title">Title:</label>
+
+                <label for="Mr">Mr.</label>
+                <input type="radio" id="Mr." value="Mr." name="title">
+                <label for="Ms">Mrs</label>
+                <input type="radio" id="Ms." value="Ms." name="title">
+                <label for="Dr">Dr.</label>
+                <input type="radio" id="Dr." value="Dr." name="title">
+
+                <br>
+                <label for="payment">Payment</label>
+                <select>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="giftcard">GiftCard</option>
+                </select><br>
+
+                <label for="subscribe">Agreed</label>
+                <input type="checkbox" id="subscribe"><br>
+
+                <label for="comment">Comment</label>
+                <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+                <label for="file">File:</label>
+                <input type="file" id="file" accept="image/jpg, image/png">
+
+                <br><br>
+                <input type="reset">
+                <input type="submit">
+            </form>
+
+        </main>
+
+        <footer>
+            <hr>
+            Author: Asif<br>
+            &copy; Copyright Reserved<br>
+            <a href="email@gmail.com">email@gmail.com</a>
+        </footer>
+    </body>
+</html>
