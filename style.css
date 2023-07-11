@@ -1,0 +1,201 @@
+/*External CSS; Linked to index.html and page2.html (can add same css to multiple html files)*/
+
+/*Colours (Can use names, RGB values, hexadecimal values, hsl values)
+(Note:Can click on colored box for colour-picker gui)*/
+
+/*Fonts (Can link to Google Fonts API or download fonts locally onto Fonts folder (.ttf)*/
+
+/*Borders*/
+
+/*Text Shadows*/
+
+/*Margins = Space around text*/
+
+/*Positions 
+- relative; positioned relative to where it normally is
+- fixed; positioned in fix spot on viewport (right #px, left #px, bottom #px)
+- absolute; positioned relative to its nearest ancestor (ex. sub box within main box (relative) )
+- sticky; positioned relative to scroll position (similar to fixed but space is left on default)
+- static; default position of an element
+)*/
+
+/*Combinators
+- ' ' (space) = descendent
+- '>' = child
+- '~' = general sibling
+- '+' = adjacent sibling
+*/
+@font-face {
+    font-family: Roboto-Light;
+    src: url(Fonts/Roboto-Light.ttf);
+}
+
+body{
+    background-color: rgb(41, 41, 41);
+    margin: 3px;
+    display: flow-root;
+    border: 3px solid;
+    
+    background-image: url(Images/ATSV_Favicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h3{
+    color: rgb(237, 134, 16);
+    font-family: verdana, arial;
+}
+#p1{
+    border-style: inset;
+    border-width: 2px;
+    border-color: rgba(255, 254, 255, 0.715);
+    border-radius: 10px;
+
+    color:tomato;
+    font-family: 'Courier New';
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+#p2{
+    /*width style color*/
+    border: 3px dotted rgb(159, 255, 252);
+    border-radius: 10px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.7em; /*1em means 100% size (16px)*/
+    color: rgb(102, 222, 255)
+}
+
+/*Classes (Add same styling to mutiple sections)*/
+.odd{
+    border-bottom: 3px dashed rgb(166, 255, 160);
+    border-left: 3px dashed rgb(166, 255, 160);
+
+    color: #59ff5f;
+    font-family: Roboto, verdana, arial;
+}
+.even{
+    border-top: 3px dashed rgb(238, 180, 254);
+    border-right: 3px dashed rgb(238, 180, 254);
+
+    color: hsl(283, 100%, 64%);
+    font-family: Roboto-Light;
+    font-size: 14px;
+}
+
+h4{
+    color: white;
+    /*Vertical Offset - Horizontal Offset - Blur*/
+    text-shadow: 3px 3px 3px red, -3px -3px 3px cyan;
+}
+
+*{ /*Affects all elements*/
+    box-sizing: border-box;
+}
+
+.box{
+    border: 5px solid;
+    padding: 10px;
+    height: auto;
+    width: 200px;
+    margin: 50px;
+    text-align: center;
+
+    min-width: 75%;
+}
+
+#box1{
+    width:100px;
+    height:100px;
+    background-color: rgb(25, 25, 219);
+    box-shadow: 3px 3px 5px green;
+
+    /*margin-top: 50px;
+    margin-bottom: 50px;*/
+
+    margin-left: auto;
+    font-size: 2em;
+}
+
+#box2{
+    width:100px;
+    height:100px;
+    background-color: rgb(245, 19, 19);
+    box-shadow: 3px 3px 5px purple;
+
+    position: relative;
+    top: 10px;
+    left: 50px;
+
+    margin: auto;
+
+    font-size: 2em;
+}
+
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+
+#img2{
+    float: right;
+    margin-left: 10px;
+}
+
+.paqua{
+    color: aquamarine;
+}
+
+#box3{
+    border: 2px solid red;
+    height: 75px;
+    overflow: auto;
+    /*
+    visible = let it overflow, 
+    hidden = hide the missing text, 
+    clip = similar to hidden but can overflow w/overflow-clip margin,
+    scroll = scroll through,
+    auto = scroll bar won't be displayed unless you need it
+    */
+}
+
+/*display types; block, inline, inline-block, hidden, none*/
+#box4{
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+#box5{
+    background-color: rgb(62, 255, 152);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+span{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    display: inline; 
+}
+
+#container{
+    border: 2px solid;
+    width: 200px;
+    height: 50px;
+}
+
+#container p{
+    background-color: yellow;
+}
+
+li:hover{
+    background-color: darkgoldenrod;
+}
